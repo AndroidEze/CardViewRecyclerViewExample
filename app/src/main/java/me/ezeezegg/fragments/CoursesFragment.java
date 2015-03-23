@@ -24,13 +24,12 @@ import me.ezeezegg.utils.ReadLocalJSON;
 public class CoursesFragment extends Fragment {
 
 
-    public CoursesFragment() {
-        // Required empty public constructor
-    }
-
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+
+        //ReclyclerView, Adapter
 
         final ArrayList<Course> courses;
         ReadLocalJSON readLocalJSON = new ReadLocalJSON();
@@ -70,11 +69,9 @@ public class CoursesFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-        return textView;
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.cursos_fragment, container, false);
+        return rootView;
     }
 
 
