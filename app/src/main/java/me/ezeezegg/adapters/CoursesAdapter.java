@@ -22,6 +22,11 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.ViewHold
     private ArrayList<Course> courses;
     private int itemLayout;
 
+    public CoursesAdapter(ArrayList<Course> data, int itemLayout) {
+        courses = data;
+        this.itemLayout = itemLayout;
+    }
+
     public static class ViewHolder extends RecyclerView.ViewHolder implements AdapterView.OnClickListener{
 
         public ImageView image;
