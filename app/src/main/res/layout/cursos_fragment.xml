@@ -17,7 +17,7 @@
         android:layout_alignParentRight="true"
         android:layout_width="@dimen/fab_size"
         android:layout_height="@dimen/fab_size"
-        android:background="@drawable/riple"
+        android:background="@drawable/ripple"
         android:layout_marginBottom="16dp"
         android:layout_marginRight="16dp"
         android:stateListAnimator="@anim/anim"
