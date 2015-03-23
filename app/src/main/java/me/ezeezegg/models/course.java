@@ -3,7 +3,7 @@ package me.ezeezegg.models;
 /**
  * Created by egarcia on 3/22/15.
  */
-public class course {
+public class Course {
 
     private Integer id;
     private String name;
